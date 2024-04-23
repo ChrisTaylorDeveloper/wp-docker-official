@@ -1,0 +1,10 @@
+services:
+  wordpress:
+    volumes:
+      # add your own plugin
+      # - ~/repos/my-wp-plugin/:/var/www/html/wp-content/plugins/my-wp-plugin
+      # replace wordpress in the image
+      - ./wordpress:/var/www/html
+  db:
+    volumes:
+      - ~/repos-mysql/this-proj:/var/lib/mysql
