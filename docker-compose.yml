@@ -1,6 +1,6 @@
 services:
   wordpress:
-    image: wordpress
+    image: wordpress:${WP_IMAGE_TAG}
     ports:
       - 8080:80
     environment:
