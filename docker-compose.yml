@@ -13,8 +13,6 @@ services:
       WORDPRESS_CONFIG_EXTRA: |
         define('WP_DEBUG_LOG', true);
         define('WP_DEBUG_DISPLAY', true);
-    volumes:
-      - ./wordpress:/var/www/html
   db:
     image: mysql:8.0
     restart: always
